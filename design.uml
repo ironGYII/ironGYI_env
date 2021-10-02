@@ -1,0 +1,40 @@
+@startuml
+class YamlConfig
+class AppBase 
+class App
+Iterator <|-- ListIterator
+Iterator <|-- Collection
+Collection <|-- List
+Collection <|-- Set
+Collection <|.. AbstractCollection
+Collection <|-- Queue
+Queue <|-- Deque
+Deque <|.. ArrayList
+List <|.. AbstractList
+List <|.. Vector
+List <|.. LinkedList
+Set <|.. AbstractSet
+Set <|.. HashSet
+Map <|.. AbstractMap
+Map <|.. Hashtable
+Map <|.. HashMap
+Map <|.. LinkedHashMap
+AbstractCollection <|-- AbstractList
+AbstractCollection <|-- AbstractSet
+AbstractList <|-- ArrayList
+AbstractList <|-- Vector
+AbstractList <|-- AbstractSequentialList
+AbstractSet <|-- HashSet
+AbstractSequentialList <|-- LinkedList
+AbstractMap <|-- HashMap
+Dictionary <|-- Hashtable
+HashMap <|-- LinkedHashMap
+
+note as N1 #green
+AbstractCollection--iterator作为数据源
+AbstractList--实现好的iterator作为数据源
+ArrayList--数组是数据操作的对象
+end note
+
+note right of ArrayList:批量操作变为数组操作
+@enduml
