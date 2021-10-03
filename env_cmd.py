@@ -36,6 +36,9 @@ def open(env_name, config_path=None, category_strs=None):
     Cmd(env_name=env_name, category=category, config_path=config_path).do()
 
 
-Run = commandr.Run
+def Main():
+    commandr.Run()
 
 
+if __name__ == '__main__':
+    pass

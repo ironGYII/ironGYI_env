@@ -8,7 +8,7 @@ setup(
     description="use for me",
 
     entry_points={
-        'console_scripts': ['me = cmd:Run']
+        'console_scripts': ['me = env_cmd:Main']
         },
     packages=find_packages()
 )
