@@ -41,4 +41,4 @@ def Main():
 
 
 if __name__ == '__main__':
-    pass
+    commandr.Run()
