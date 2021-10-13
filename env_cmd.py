@@ -1,8 +1,8 @@
 # -*- coding:utf8 -*-
 
 import commandr
-from config import get_env_config, set_config_path
-from app import Chrome, App
+from my_env.config import get_env_config, set_config_path
+from my_env.app import Chrome, App
 
 
 class Cmd:

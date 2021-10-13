@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 import os
 import json
-from logger import logger
+from my_env.logger import logger
 
 
 class App:
