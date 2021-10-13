@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 import os
 import yaml
-from logger import logger
+from my_env.logger import logger
 
 __all__ = ['get_env_config', 'set_config_path']
 
